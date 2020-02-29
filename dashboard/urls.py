@@ -5,4 +5,5 @@ app_name = 'dashboard'
 # Be careful setting the name to just /login use userlogin instead!
 urlpatterns=[
     url(r'^$',views.index,name='index'),
+    url(r'^upload',views.upload_dataset,name='upload'),
 ]
