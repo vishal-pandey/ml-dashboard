@@ -24,7 +24,7 @@ SECRET_KEY = 'l532(wo!u$@k%=b86$#mh(n4@ql67dk4*ch0vz@ou3at4bllzk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ml-dashboard.vishalpandey.co.in', 'http://ml-dashboard.vishalpandey.co.in', 'https://ml-dashboard.vishalpandey.co.in']
 
 
 # Application definition
