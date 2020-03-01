@@ -5,4 +5,4 @@ from django.contrib.auth.models import User
 class DatasetForm(forms.ModelForm):
      class Meta():
          model = Dataset
-         fields = ('dataset', )
+         fields = ('dataset',)

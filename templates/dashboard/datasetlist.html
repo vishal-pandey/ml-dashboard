@@ -1,0 +1,28 @@
+{% extends "login/base.html" %}
+{% load static %}
+{% block body_block %}
+<div class="container">
+	<table class="table table-striped">
+	    <thead>
+	      <tr>
+	        <th>Id</th>
+	        <th>Dataset file name</th>
+	        <th>Dataset size</th>
+	        <th>Download</th>
+	        <th>Report</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+			{% for o in datasets %}
+			    <tr>
+			    	<td>{{o.id}}</td>
+			    	<td>{{o.name}}</td>
+			    	<td>{{o.size}}</td>
+			    	<td><a href="/media/{{o.dataset}}"><span class="glyphicon glyphicon-download-alt"></span></a></td>
+			    	<td>Report</td>
+			    </tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+{% endblock %}

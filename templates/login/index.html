@@ -2,12 +2,13 @@
 {% block body_block %}
 <div class="container">
   <div class="jumbotron">
-    <h1>Welcome to the Djungle !</h1>
+    <h1>Welcome to the Analytics Dashboard !</h1>
     {% if user.is_authenticated %}
         <h2>Hello {{ user.username }}</h2>
         <a href="{% url 'dashboard:index' %}">Go to Dashboard</a>
     {% else %}
-        <h2>Register or Login if you'd like to</h2>
+        <h2><a class="navbar-link" href="{% url 'login:register' %}">Register</a>
+<a class="navbar-link" href="{% url 'login:user_login' %}">Login</a></h2>
     {% endif %}
   </div>
 </div>
